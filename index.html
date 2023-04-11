@@ -9,29 +9,39 @@
 </head>
 
 <body>
-
-    <nav>
+    <div>
+        <a href="#"  class="up"><img src="https://img.icons8.com/ios-glyphs/30/null/double-up--v1.png"/></a>
+    </div>
+    <header class="header">
         <div>
-            <h1>Apple</h1>
+            <img src="https://img.icons8.com/ios-glyphs/45/FFFFFF/mac-os.png"/>
         </div>
+  
+        <button class="button">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+  
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#" class="a">Inicio</a></li>
+                <li class="li"><a href="#productos" class="a">Productos</a></li>
+                <li class="li"><a href="#nosotros" class="a">Nosotros</a></li>
+                <li class="li"><a href="#contacto" class="a">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-    </nav>
-
-    <header class="content">
+    <section class="content presentacion">
         <h2>Think different</h2>
         <p>
             Sea bienvenido/a a nuestra alta gama de productos. Aquí encontrarás todo lo que necesites para tu día a día.
         </p>
         <div>
-            <a href="#products" class="btn">Saber más</a>
+            <a href="#productos" class="btn">Saber más</a>
         </div>
-    </header>
+    </section>
 
     <section id="productos" class="content products">
 
@@ -66,20 +76,18 @@
 
     <section id="nosotros" class="content about">
         <h2>Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Ut soluta similique 
-            quia reprehenderit eligendi aliquam. Sit 
-            odio impedit quibusdam. Velit corporis, 
-            optio debitis quidem ex ipsam rerum dolorem autem sequi.
+        <p>Somos una empresa tecnológica que diseña y produce equipos electrónicos innovadores para todo tipo de usuario. Nuestros detalles de diseño son cuidadosamente pensados para mejorar la experiencia de nuestros clientes.
         </p>
         <div>
-            <a href="#" class="btn">Saber más</a>
+            <a href="#contacto" class="btn">Saber más</a>
         </div>
     </section>
 
     <section id="contacto" class="content contact">
         <h2>Contacto</h2>
     </section>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
