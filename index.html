@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/40/FFFFFF/mac-os.png" type="image/x-icon">
     <title>Apple</title>
 </head>
 
@@ -60,13 +61,11 @@
     </section>
 
     <section id="productos" class="content products">
-
         <h2>Productos</h2>
         <p>
             Nuestros productos ofrecen una experiencia única. Sumérgete dentro de nuestra tecnologia que está recorriendo el mundo entero.
         </p>
         <div class="box-container">
-
             <div class="box">
                 <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/mac-os.png"/>
                 <h3>iPhone</h3>
@@ -94,14 +93,32 @@
         <h2>Nosotros</h2>
         <p>Somos una empresa tecnológica que diseña y produce equipos electrónicos innovadores para todo tipo de usuario. Nuestros detalles de diseño son cuidadosamente pensados para mejorar la experiencia de nuestros clientes.
         </p>
-        <div>
-            <a href="#contacto" class="btn">Saber más</a>
+        
+        <div class="box2">
+                <div>
+                    <img src="https://img.icons8.com/ios-glyphs/75/FFFFFF/mac-os.png"/>
+                </div>
+                <div class="info" style="margin-left:20px;">
+                    <h6>Available on the</h6>
+                    <h5>App Store</h5>
+                </div>
         </div>
     </section>
 
-    <section id="contacto" class="content contact">
+    <section id="contacto"  class="content contact">
         <h2>Contacto</h2>
-    </section>
+          <div class="contact-content">
+            <form class="form" action="https://formsubmit.co/manuel.castro.ofc@gmail.com" method="POST">
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" placeholder="Pepito">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="email" required placeholder="Pepito@gmail.com">
+              <label for="message">Mensaje</label>
+              <textarea name="message" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+      </section>
 
     <script src="script.js"></script>
     

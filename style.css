@@ -60,9 +60,14 @@ h4{
     font-size: 14px;
 }
 h5{
-  font-size: 76px;
+  font-size: 56px;
   color: #9c27b0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h6{
+  font-size: 32px;
+  color: white;
+  font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 p{
     font-size: 16px;
@@ -111,6 +116,8 @@ a {
 .about{
   background: rgb(63,63,63);
   background: linear-gradient(304deg, rgba(63,63,63,1) 0%, rgba(42,42,42,1) 100%);
+  display: flex;
+  align-items: center;
 }
 .contact{
   background: rgb(156,39,176);
@@ -126,7 +133,7 @@ a {
     flex-wrap: wrap;
     text-align: center;
 }
-.box-container .box {
+.box {
     height: 11rem;
     width: 17rem;
     background: #101010;
@@ -139,11 +146,22 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-.box-container .box img {
+.box img {
     text-align: center;
     border-radius: 50%;
     background: #9c27b0;
     padding: 0.5rem;
+}
+.box2{
+    height: 11rem;
+    width: 34rem;
+    background: rgb(31,31,31);
+    background: linear-gradient(304deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .info{
     display: flex;
@@ -185,6 +203,7 @@ button{
     color: #fff;
     text-decoration: none;
     background: #2a2a2a;
+    cursor: pointer;
 }
 .btn:hover {
     color: #9c27b0;
@@ -194,6 +213,46 @@ svg {
   display: block;
   fill: currentColor;
 }
+
+
+/*Formulario de contacto*/
+:root {
+  --font: 'Oxygen', sans-serif;
+  --primary: #42E2B8;
+  --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+  --black: black;
+}
+body {
+  font-family: var(--font);
+  background: var(--gradient);
+  margin: 0;
+}
+.form {
+  max-inline-size: 550px;
+  margin: auto;
+}
+.form label {
+  color: rgb(197, 197, 197);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  padding-inline-start: .5em;
+}
+.form label span {
+  color: #DA1414;
+}
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8em;
+  border-radius: .5em;
+  border: 1px solid #9c27b0;
+}
+.footer {
+  text-align: center;
+}
+
 
 
 
@@ -225,13 +284,20 @@ svg {
   .header .li{
     margin: 1rem 0;
   }
+  .box2{
+    height: max-content;
+  }
+  h5{
+    font-size: 1px;
+  }
 }
+
 @media screen and (max-width:600px){
   .info{
-    margin-bottom: 30px;
     align-items: center;
   }
 }
+
 @media screen and (max-width:1080px){
     p{
         margin:50px 50px 50px 50px;
